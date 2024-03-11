@@ -1,6 +1,8 @@
 import "./CoerConcept.css";
 
 export default function CoreConcept({ image, title, description }) {
+  console.log("Core");
+
   return (
     <li>
       <img src={image} alt={title} />
