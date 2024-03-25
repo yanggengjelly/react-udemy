@@ -7,10 +7,16 @@ export default function Player({ nmae, symbol }) {
     setIsEditing(true);
   }
 
+  let playerName = <span className="player-name">{nmae}</span>;
+
+  if (isEditing === true) {
+    playerName = <input type="text" required />;
+  }
+
   return (
     <li>
       <span className="player">
-        <span className="player-name">{nmae}</span>
+        {playerName}
         <span className="player-symbol">{symbol}</span>
       </span>
       <button onClick={handleEditClick}>Edit</button>
