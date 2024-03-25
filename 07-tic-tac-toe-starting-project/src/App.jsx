@@ -5,8 +5,8 @@ function App() {
     <mian>
       <div id="game-container">
         <ol id="players">
-          <Player nmae="Player 1" symbol="X" />
-          <Player nmae="Player 2" symbol="O" />
+          <Player name="Player 1" symbol="X" />
+          <Player name="Player 2" symbol="O" />
         </ol>
       </div>
     </mian>
